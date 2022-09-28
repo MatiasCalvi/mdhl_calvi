@@ -1,175 +1,261 @@
-*{  
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-/* --------------------------------ENCABEZADO--------------------------------------------------- */
+main,body{
+    background-color:rgb(240, 232, 232);
+}
+/* ---------------------------------ENCABEZADO----------------------------------------------- */
 .encabezado{
-    background: url(/assets/img/banner.jpg);
+    background-color: rgb(230, 174, 71);
     display: flex;
-    justify-content: center;
+    height: 6rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.encabezado figure{
+    display: flex;
     align-items: center;
-    height: 25vh;
-    background-position: center;
-    text-align: center;
 }
-.encabezado h1,.logo{
-    text-transform: uppercase;
+.encabezado h1{
+    font-size: 1.8rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    color: white;
 }
-.encabezado  figure img{
-    width: 50px;
-}
-
-/* ----------------------------------------NAV------------------------------------------------------- */
 nav{
-    background-color: green;
-    height: 4vh;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap: 1%;
+    padding:1em;
+    margin-right: 0.5em;
 }
-nav a{
-    display: flex;
-    align-items: center;
+.encabezado nav a{
+    padding: 8px;
     background-color: black;
     color: white;
-    height: 100%;
-    vertical-align: middle;
     text-decoration: none;
-    padding: 10px;
+    border-radius: 10px;
+    margin-left: 5px;
 }
-/* -----------------------------------------MAIN----------------------------------------------------------------------- */
-.general{
-    min-height: 60vh;
+.encabezado nav .indice{
+    color: indianred;
 }
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 35vh;
+nav a:hover{
+    color: indianred;
 }
-/* -----------------------------------------CARDS---------------------------------------------------------- */
-.card{
-    height: 300px;
-    width: 15%;
-    background-color: rgba(53, 163, 53, 0.815);
+.encabezado figure img{
+    height: 6em;
+    width: 6em;
+    background-color: white;
+}
+/* ----------------------------------BODY-GENERAL-------------------------------------------------- */
+.titulo{
+    background-color: black;
+    color: white;
     text-align: center;
-    margin-right: 2%;
+    font-size: 1.3rem;
 }
-.card figure{
-    height: 80%;
-    width: 100%;
+.contenedor-oficial{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.card figure img{
-    object-fit: contain;
-    height: 90%;
-    width: 90%;
-}
-/* ----------------------------------------FOTO/PARRAFO------------------------------------------------------------- */
-.foto-texto{
-    display: flex;
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
-.foto-grande{
+.contenedor-oficial .articulos{
     width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.foto-grande img{
-    width: 50%;
-    height: 50%;
-    border-radius: 15%;
-}
-.parrafo{
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
+    padding-top: 1rem;
 }
-.parrafo h2{
-    font-size: 1.3rem;
+.contenedor-oficial .articulos figure img{
+    width: 11em;
+    height: 11em;
+    padding-bottom: 0.8rem;
 }
-/* ---------------------------------------PARRAFO------------------------------------------------------------- */
-footer{
-    background-color: rgb(109, 241, 186);
+.contenedor-oficial .articulos h3,p{
+    font-size: xx-large;
+    padding: 0.5rem;
+}
+.contenedor-oficial .contenedor-foto{
+    width: 50%;
+    padding-top: 4em;
+    padding-right: 2em;
+    padding-left: 1em;
+}
+.img{
     width: 100%;
-    height: 10.6vh;
+    height: 100%;
+    border-radius: 30px;
+}
+/* ---------------------------------ID-ABOUT-------------------------------------------------------- */
+#articulos{
+    padding:2em;
+}
+#articulos h3,p{
+    font-size: 1.4rem;
+}
+/* ----------------------------------GAME-INFORMATION---------------------------------------------------- */
+.titulos-games{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    margin: 1em 1em 5em 1em;
+    gap:1em;
+}
+.titulos-games h2{
+    font-size: 2rem;
+}
+.titulos-games .primero,.segundo{
+    align-self:flex-start;
+    padding-left: 17.5%;
+    font-size: 1.2rem;
+}
+.titulos-games .segundo{
+    font-weight: lighter;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+table tr,th,td{
+    padding: 1.2em 8em 1.2em 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.mapa{
+    height: 150px;
+    width: 150px;
+}
+.mapa:hover{
+    transform: scale(1.8);
+    transition: .5s;
+}
+.informacion{
+    display: flex;
+    margin-top: 1.2em;
+    margin-left: 17.5%;
+}
+.informacion p{
+    font-size: 1.1rem;
+    padding: 0 0 0 10px;
+}
+.informacion h4{
+    font-size: 1.1rem;
+    padding-left:10px;
+}
+/* ----------------------------RULES--------------------------------------------------------------------------- */
+.instrucciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.lista-sangria li{
+    list-style-position:inside;
+}
+.caja{
+    list-style-position:inside;
+    list-style-type: circle;
+}
+.cambio-1{
+    list-style: none;
+    text-indent: 2rem;
+}
+.cambio-2{
+    padding-left: 5rem;
+}
+.general{
+    padding: 3rem 5rem 0 5rem;
+}
+.general dt,dd,span{
+    padding: 0.3rem;
+}
+.general span,dt,.texto{
+    font-weight: bold;
+}
+.texto{
+    margin:1rem 0 1rem 0;
+}
+.lista-minuscula{
+    list-style-type:lower-alpha;
+}
+.lista-cambiada{
+    list-style: none;
+}
+/* -------------------------------REGISTRATION------------------------------------------------------------ */
+.subtitulo{
+    text-align: center;
+    margin: 1.5rem 12% 1.5rem 0;
 }
 form{
-    width: 15%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 10%;
 }
-fieldset{
-   padding: 5% 3% 5% 3%;
+fieldset,label,input,h3{
+    border: none;
+    margin: .5rem;
 }
-footer a{
+.form-1{
+    margin-right: 3%;
+}
+.form-2{
+    margin-right: 16%;
+}
+.form-3{
+    margin-right: 8%;
+}
+.form-4{
+    margin-right: 20.5%;
+}
+.form-5{
+   margin-left: 30.5%;
+   margin-right: 20%;
+   padding: 0 2%;
+}
+.form-5>p{
+    font-size: 1rem;
+}
+form>input{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 45px;
+}
+form>input:hover{
+    background-color: indianred;
+}
+.grado{
+    font-size: .8rem;
+    display: flex;
+}
+.prueba{
+    display: flex;
+}
+.prueba2{
+    padding-top:.2rem;
+}
+/* -------------------------------FOOTER------------------------------------------------------------------- */
+.footer{
+    height: 2.5rem;
+    width: 100%;
     background-color: black;
     color: white;
-    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
-@media screen and (max-width:1160px) {
-    .general{
-        min-height: 70vh;
-    }
-    .main{
-       min-height: 40vh;
-       gap: 1%;
-       flex-wrap: wrap;
-    }
-    .foto-texto{
-        min-height: 30vh;
-    }
-    .card{
-        width: 200px;
-    }
+.footer p {
+    font-size: 1.2rem;
+    padding-top: 8px;
 }
-@media screen and (max-width:905px) {
-    .card{
-        margin-right: 0;
-    }
-    .general{
-        display: flex;
-        flex-direction: column;
-        min-height: 89vh;
-    }
-    .main{
-        min-height: 80vh;
-    }
-    .foto-texto{
-        min-height: 10vh;
-    }
+.footer2{
+    height: 2.5rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 2.5rem;
 }
-@media screen and (max-width:415px) {
-    .encabezado{
-        height:10vh
-    }
-    .general{
-        height: 80vh;
-    }
-    .main{
-        flex-direction: column;
-    }
-    .card{
-        width: 40%;
-        height: 40%;
-    }
-    .foto-texto{
-        flex-direction: column;
-        height: 60%;
-        width: 50%;
-    }
-    footer{
-        height:10vh
-    }
+.footer2 p {
+    font-size: 1.2rem;
+    padding-top: 8px;
 }
