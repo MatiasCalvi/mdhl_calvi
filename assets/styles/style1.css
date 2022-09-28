@@ -1,0 +1,175 @@
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* --------------------------------ENCABEZADO--------------------------------------------------- */
+.encabezado{
+    background: url(/assets/img/banner.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-position: center;
+    text-align: center;
+}
+.encabezado h1,.logo{
+    text-transform: uppercase;
+}
+.encabezado  figure img{
+    width: 50px;
+}
+
+/* ----------------------------------------NAV------------------------------------------------------- */
+nav{
+    background-color: green;
+    height: 4vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1%;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 10px;
+}
+/* -----------------------------------------MAIN----------------------------------------------------------------------- */
+.general{
+    min-height: 60vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 35vh;
+}
+/* -----------------------------------------CARDS---------------------------------------------------------- */
+.card{
+    height: 300px;
+    width: 15%;
+    background-color: rgba(53, 163, 53, 0.815);
+    text-align: center;
+    margin-right: 2%;
+}
+.card figure{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card figure img{
+    object-fit: contain;
+    height: 90%;
+    width: 90%;
+}
+/* ----------------------------------------FOTO/PARRAFO------------------------------------------------------------- */
+.foto-texto{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.foto-grande{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foto-grande img{
+    width: 50%;
+    height: 50%;
+    border-radius: 15%;
+}
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+.parrafo h2{
+    font-size: 1.3rem;
+}
+/* ---------------------------------------PARRAFO------------------------------------------------------------- */
+footer{
+    background-color: rgb(109, 241, 186);
+    width: 100%;
+    height: 10.6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    width: 15%;
+    text-align: center;
+}
+fieldset{
+   padding: 5% 3% 5% 3%;
+}
+footer a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+@media screen and (max-width:1160px) {
+    .general{
+        min-height: 70vh;
+    }
+    .main{
+       min-height: 40vh;
+       gap: 1%;
+       flex-wrap: wrap;
+    }
+    .foto-texto{
+        min-height: 30vh;
+    }
+    .card{
+        width: 200px;
+    }
+}
+@media screen and (max-width:905px) {
+    .card{
+        margin-right: 0;
+    }
+    .general{
+        display: flex;
+        flex-direction: column;
+        min-height: 89vh;
+    }
+    .main{
+        min-height: 80vh;
+    }
+    .foto-texto{
+        min-height: 10vh;
+    }
+}
+@media screen and (max-width:415px) {
+    .encabezado{
+        height:10vh
+    }
+    .general{
+        height: 80vh;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .card{
+        width: 40%;
+        height: 40%;
+    }
+    .foto-texto{
+        flex-direction: column;
+        height: 60%;
+        width: 50%;
+    }
+    footer{
+        height:10vh
+    }
+}
